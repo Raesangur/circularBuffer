@@ -57,12 +57,8 @@ The code above returns:
 
 ...
 
-98.000000
-
-99.000000
-
-This array takes 416 bytes
-
-A normal array would have taken 400 bytes
-
-There is a 104% size ratio
+98.000000  
+99.000000  
+This array takes 416 bytes  
+A normal array would have taken 400 bytes  
+There is a 104% size ratio  
