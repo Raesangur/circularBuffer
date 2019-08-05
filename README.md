@@ -51,6 +51,7 @@ int main()
 ```
 
 The code above returns:  
+```
 0.000000  
 1.000000  
 2.000000  
@@ -62,3 +63,4 @@ The code above returns:
 This array takes 416 bytes  
 A normal array would have taken 400 bytes  
 There is a 104% size ratio  
+```
