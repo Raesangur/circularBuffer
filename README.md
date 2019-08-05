@@ -15,8 +15,8 @@ HOW TO USE:
 
 
 
-************ EXAMPLE CODE ************
-
+# ************ EXAMPLE CODE ************
+```
 #include "circularBuffer.h"
 
 int main()
@@ -47,7 +47,7 @@ int main()
 	printf("A normal array would have taken %d bytes \n", originalBytes);
 	printf("There is a %f%% size ratio \n", gain);
 }
-
+```
 
 The code above returns:
 0.000000
