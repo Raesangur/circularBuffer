@@ -2,16 +2,16 @@
 Generic circular buffers in C
 HOW TO USE:
 
-1- Create a circularBuffer_t pointer;
-2- Assign the pointer using the circularBuffer_create() function.
+1. Create a circularBuffer_t pointer;
+2. Assign the pointer using the circularBuffer_create() function.
    -circularBuffer_create() takes 3 parameters:
       - the pointer created in step 1
       - the number of elements in the buffer
       - the size in bytes of each elements
    -circularBuffer_create() will handle the memory allocation and return a pointer to the buffer if successful
     (if there was an error, the function will return NULL)
-3- Insert new elements in the buffer using circularBuffer_insert().
-4- Get the value of the elements using circularBuffer_getElement().
+3. Insert new elements in the buffer using circularBuffer_insert().
+4. Get the value of the elements using circularBuffer_getElement().
 
 
 
