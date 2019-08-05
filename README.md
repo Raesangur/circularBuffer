@@ -22,10 +22,11 @@ HOW TO USE:
 
 int main()
 {
-  /* Creation of the circularbuffer */
+  	/* Creation of the circularbuffer */
 	static circularBuffer_t* cb = NULL;
 	cb = circularBuffer_create(cb, 100, sizeof(float));
-
+	
+	/* Fill the buffer */
 	float f = 0.0f;
 	for (uint16_t i = 0; i < cb->num; i++)
 	{
@@ -33,13 +34,15 @@ int main()
 		f++;
 	}
 	
+	/* Read the values from the buffer */
 	float* temp;
 	for (uint8_t i = 0; i < cb->num; i++)
 	{
 		temp = (float*)circularBuffer_getElement(cb, i);
 		printf("%f \n", *temp);
 	}
-
+	
+	/* Calculate size gain compared to a normal non-generic array */
 	uint16_t originalBytes = cb->num * cb->size;
 	uint16_t fullBytes = originalBytes + sizeof(circularBuffer_t);
 	float gain = (fullBytes * 100.0) / originalBytes;
