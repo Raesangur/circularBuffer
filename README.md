@@ -50,13 +50,10 @@ int main()
 }
 ```
 
-The code above returns:
-
-0.000000
-
-1.000000
-
-2.000000
+The code above returns:  
+0.000000  
+1.000000  
+2.000000  
 
 ...
 
